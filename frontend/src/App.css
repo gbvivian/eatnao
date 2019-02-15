@@ -1,0 +1,57 @@
+.App {
+	text-align: center;
+}
+
+.Header {
+	font-size: 350%;
+}
+
+.Choice {
+	font-size: 100px;
+	text-decoration: none;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+
+.Restaurant-header {
+	border-radius: 50px 50px 0% 0%;
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+	width: 670px;
+	margin: auto;
+	padding: 15px;
+	font-size: 155%;
+	font-weight: bold;
+}
+.Restaurant-image {
+	border-radius: 0% 0% 5% 5%;
+	margin-bottom: 6%;
+	width: 700px;
+}
+
+@media (max-width: 991.98px) {
+	.Header {
+		font-size: 35px;
+	}
+
+	.Choice {
+		font-size: 50px;
+	}
+
+	.Restaurant-header {
+		width: 92%;
+		padding: 15px;
+		font-size: 155%;
+	}
+	.Restaurant-image {
+		border-radius: 0% 0% 10% 10%;
+		margin-bottom: 6%;
+		width: 100%;
+	}
+	.Loading-image {
+		width: 100%;
+		height: 100%;
+	}
+}
