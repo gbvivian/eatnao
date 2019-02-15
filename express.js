@@ -1,5 +1,6 @@
 ('use strict');
 const express = require('express');
+const cors = require('cors');
 const yelp = require('yelp-fusion');
 const path = require('path');
 
@@ -7,6 +8,8 @@ const app = express();
 const port = process.env.PORT || 3030;
 
 const yelpApiClient = yelp.client(process.env.YELP_API_KEY);
+
+app.use(cors());
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'frontend/build')));
